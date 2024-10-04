@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+</head>
+<body>
+    <h1>Estimated Oxygen Production</h1>
+    <p>The estimated oxygen production from the leaf is: <strong>{{ oxygen }} mL/hour</strong></p>
+    <h2>Visual Analysis</h2>
+    <img src="{{ url_for('static', filename=plot_image.split('/')[-1]) }}" alt="Leaf Analysis">
+    <br><br>
+    <a href="/">Upload another image</a>
+</body>
+</html>
